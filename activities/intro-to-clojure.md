@@ -13,10 +13,6 @@ Try pasting this into a repl and tweaking it:
 (* 2 8)
 ```
 
-#### return is implicit
-
-All functions return the last value in the brackets automatically - there's no need to explicitly return anything.
-
 ### Brackets / parenthesis can be nested
 
 Try pasting this into a repl and tweaking it:
@@ -146,3 +142,7 @@ and invoke it like so:
 ;; this is calculating the vat on GBP300 at a rate of 20%
 (calculate-vat 300 20)
 ```
+
+#### return is implicit
+
+All functions return the last value in the brackets automatically - there's no need to explicitly return anything.
