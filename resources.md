@@ -1,3 +1,8 @@
+# Handy stuff
+- [The Clojure Style Guide](https://github.com/bbatsov/clojure-style-guide) - This is a great resource for styling things well.
+- [The ClojureScript Cheat Sheet](http://cljs.info/cheatsheet/) - my first go-to resource for looking up functions
+
+# Practice and books
 ## Clojure for the Brave and True
 
 [Link](http://www.braveclojure.com/foreword/)
