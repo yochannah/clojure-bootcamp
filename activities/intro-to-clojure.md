@@ -62,7 +62,7 @@ The structures you're most likely to encounter are maps vectors, and keywords. F
        :breeds ["siamese" "moggie"]}
      :dog-types {
        :count 23
-       :breeds ["malamute" "pharoh's hound" "little yipping chihuahua"]
+       :breeds ["malamute" "pharaoh's hound" "little yipping chihuahua"]
      }
    })
 ```
@@ -237,17 +237,17 @@ user=> (-> "a b c d"
 Some further notes about this example:
 
 - `user=>` emulates the output in a repl and is not part of the code.
-- Until now all the functions discussed have been pure Clojure(script). Functions that start with a dot indicate that they're actually javascript functions being executed in Clojure. While for most part, Clojure and Clojurescript are absolutely identical, occasionally you may need to interface specifically with the Java or JavaScript functions - especially when it comes to DOM manipulation. Here's a great guide to [Javascript Interoperability](https://www.spacjer.com/blog/2014/09/12/clojurescript-javascript-interop/)
+- Until now all the functions discussed have been pure Clojure(Script). Functions that start with a dot indicate that they're actually Javascript functions being executed in Clojure. While for most part, Clojure and Clojurescript are absolutely identical, occasionally you may need to interface specifically with the Java or JavaScript functions - especially when it comes to DOM manipulation. Here's a great guide to [Javascript Interoperability](https://www.spacjer.com/blog/2014/09/12/clojurescript-javascript-interop/)
 
 ## Additional tutorials:
 
 These will cover Clojure more generally and may touch on things we haven't really looked at or don't use much in BlueGenes:
 
 - Expand your knowledge and practice what you know with [ClojureScript Koans](http://clojurescriptkoans.com/) - they'll introduce additional data types and concepts like lists, sets, and advanced functions, so keep your cheat sheet handy.
-- [Clojure Bridge](http://clojurebridge.github.io/curriculum/#/)
-- [Clojure from the ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
+- [Clojure Bridge](http://clojurebridge.github.io/curriculum/#/) Tutorials
+- [Clojure from the ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome) and some more tutorials
 
-
+===================================
 
 - [PREVIOUS: requirements](../requirements.md)
 - [NEXT: re-frame and reagent](re-frame-and-reagent.md)
