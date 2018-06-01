@@ -1,17 +1,24 @@
-[PREVIOUS: requirements](../requirements.md)
-[NEXT: re-frame and reagent](re-frame-and-reagent.md)
+- [PREVIOUS: requirements](../requirements.md)
+- [NEXT: re-frame and reagent](re-frame-and-reagent.md)
 
 # Self-study
 
 This guide is designed to give you some of the basics you'll need to know for [BlueGenes](https://github.com/intermine/bluegenes), and *doesn't* aim to act as a full Clojure / ClojureScript primer.
 
-## Basic you'll need to know
+## Getting started
 
 Make sure the [prerequisites](../requirements.md) are installed first, and you should be able to test every code block below out.
 
 In a terminal, type `lein repl` to activate an interactive console that will print out results to any functions you've shared. If you need to leave the repl, type `exit`.
 
 Ok, let's get started:
+
+### Clojure vs Clojurescript
+A lot of tutorials will tell you all about how Clojure is a dialect of [LISP](https://en.wikipedia.org/wiki/LISP) and a [functional](https://en.wikipedia.org/wiki/Functional_programming), [immutable](https://www.infoq.com/articles/in-depth-look-clojure-collections) language. You can read more about that later if you wish - for most part, just remember that Clojure and ClojureScript have identical syntax, with a few exceptions. Clojure compiles to be run on the JVM, ClojureScript compiles into javascript.
+
+ So why have differences between Clojure and ClojureScript at all? It's because there are places where the JVM and JavaScript don't overlap - mostly in libraries and in browser DOM manipulation. You can't run a javascript library on the JVM, nor a java / clojure library on the browser. Similarly, the JVM doesn't usually have to respond to browser based user click events! 95% of this tutorial will run on either platform, and we'll discuss specific differences when we reach them.
+
+## Ok, let's write some code!
 
 ### Invoking a function
 
@@ -241,6 +248,6 @@ These will cover Clojure more generally and may touch on things we haven't reall
 - [Clojure from the ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
 
 
- 
-[PREVIOUS: requirements](../requirements.md)
-[NEXT: re-frame and reagent](re-frame-and-reagent.md)
+
+- [PREVIOUS: requirements](../requirements.md)
+- [NEXT: re-frame and reagent](re-frame-and-reagent.md)
