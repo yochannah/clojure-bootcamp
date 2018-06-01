@@ -2,7 +2,7 @@
 
 ## Basic you'll need to know
 
-Make sure the prerequisites are installed first, and you should be able to test everything out in a terminal by typing `lein repl` into the terminal to activate an interactive console that will print out results to any functions you've shared.
+Make sure the [prerequisites](../requirements.md) are installed first, and you should be able to test everything out in a terminal by typing `lein repl` into the terminal to activate an interactive console that will print out results to any functions you've shared.
 
 ### Invoking a function
 
