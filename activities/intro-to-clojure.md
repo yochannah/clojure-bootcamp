@@ -26,7 +26,7 @@ Check out http://cljs.info/cheatsheet/ for a useful list.
 
 ### Data structures & syntax
 
-The structures you're most likely to encounter are maps and vectors. Note that commas aren't necessary to separate values.
+The structures you're most likely to encounter are maps vectors, and keywords. For syntax, note that commas aren't necessary to separate values, and whitespace is irrelevant to clojure.
 
 #### Vector
 ```clojure
@@ -39,16 +39,35 @@ The structures you're most likely to encounter are maps and vectors. Note that c
     ; this is a "map". Very similar to json or python dict format, it allows you to store key/value pairs.
     ; again, note there are no semi colons or commas needed.
     ; also note that we use kebab-case for clojure variables, NOT camelCase.
-   {
+(def critters   
+  {
      :cat-types {
        :count 12
        :breeds ["siamese" "moggie"]}
      :dog-types {
        :count 23
-       :breeds ["malamute" "pharoh's hound" "little yipping chihuaha"]
+       :breeds ["malamute" "pharoh's hound" "little yipping chihuahua"]
      }
-   }
+   })
 ```
+
+To access an object in a map, call the key you want as a function, with the name of the map as the second arg:
+
+```clojure
+   (:cat-types critters)
+   ;; returns
+   ;;{ :count 12
+   ;;  :breeds ["siamese" "moggie"]}
+```
+
+You can also access nested properties. these both do the same thing:
+
+```clojure
+(:count (:cat-types critters))
+(get-in critters [:cat-types :count])
+```
+
+Challenge: Try using functions like first, last, or nth to get a specific breed from the critters map. Use the [cheatsheet](http://cljs.info/cheatsheet/) to look these functions up.
 
 ### You won't write HTML, you'll write hiccup.
 
@@ -69,11 +88,29 @@ would be written like this in hiccup:
   [:p "This is my cat, Fluffy."]]
 ```
 
+#### Keywords
+
+By now you've seen some identifiers that start with colons: `:`. This is a special type of symbol known as a keyword. Unlike strings, they don't need quotes around them, and can be declared directly with the colon or by using the function `keyword`.
+
+```clojure
+; these are the same, so this should return
+; true if you paste it in a repl.
+; also, don't panic - clojure really does use a single
+; equals sign for comparison. Whaaaat.
+(= (keyword "kitten") :kitten)
+
+;A keyword isn't the same as the string it was made from.
+;This will return false.
+(= (keyword "kitten") "kitten")
+
+```
+
 ### You'll probably never ever need a `for` loop
 
 [map](http://clojuredocs.org/clojure.core/map) and [reduce](http://clojuredocs.org/clojure.core/reduce) are two *really* useful ways to iterate. Needing to access the index of an item is rare.
 
 [Here's an example](https://github.com/intermine/bluegenes/blob/ca46fc89e9848474a5ea032932e40be66eccd590/src/cljs/bluegenes/developer.cljs#L70) of a map that outputs multiple table rows in BlueGenes.
+
 
 ### Defining variables and writing functions.
 
@@ -154,7 +191,39 @@ and invoke it like so:
 
 All functions return the last value in the brackets automatically - there's no need to explicitly return anything.
 
-## Additional tutorials:
+### Threading
 
+Sometimes Clojure's nested structure can be a pain, but threading can help with this. You'll see this quite a bit in bluegenes.
+
+Here's an example directly from the [clojure docs](http://clojuredocs.org/clojure.core/-%3E):
+
+```clojure
+;;read from the centre outwards.
+; This code converts all letters to uppercase, so we have "A B C D"
+; then replaces "A" with "X", making the  string "X B C D"
+; then it splits the string on space, giving us ["X" "B" "C" "D"]
+; and finally returns only the first item from the vector - "X".
+
+user=> (first (.split (.replace (.toUpperCase "a b c d") "A" "X") " "))
+"X"
+
+;; Perhaps easier to read:
+; threading passes the second argument - in this case "a b c d"
+; sequentially as the first argument for all of the later functions.
+user=> (-> "a b c d"
+           .toUpperCase
+           (.replace "A" "X")
+           (.split " ")
+           first)
+"X"
+```
+
+Some further notes about this example:
+
+- `user=>` emulates the output in a repl and is not part of the code.
+- Until now all the functions discussed have been pure Clojure(script). Functions that start with a dot indicate that they're actually javascript functions being executed in Clojure.
+
+## Additional tutorials:
+- Expand your knowledge and practice what you know with [ClojureScript Koans](http://clojurescriptkoans.com/) - they'll introduce additional data types and concepts like lists, sets, and advanced functions, so keep your cheat sheet handy.
 - [Clojure Bridge](http://clojurebridge.github.io/curriculum/#/)
 - [Clojure from the ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
