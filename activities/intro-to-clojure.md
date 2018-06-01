@@ -104,12 +104,16 @@ If you want to define something constant that is global to the file you're worki
 (def important-url "http://www.intermine.org")
 ```
 
-You'd be able to access `important-url` anywhere in the file where it was `def`ed, or anywhere its file was imported.
+You'd be able to access `important-url` anywhere in the file where it was `def`ed, or anywhere its file was imported. Example:
+
+```clojure
+[:a {:href important-url} "Click here to visit the InterMine home page"]
+```
 
 #### Define a function
 A named function is defined using `defn`, as below, with arguments in a vector after the name. The last item before the closing brackets is automatically returned.
 
-Try pasting this into a repl
+Try pasting this into a repl:
 ```clojure
 (defn doubleIt [number]
   (* number 2))
@@ -140,9 +144,17 @@ You can define with multiple arguments:
 and invoke it like so:
 ```clojure
 ;; this is calculating the vat on GBP300 at a rate of 20%
+;; it should return 60.
 (calculate-vat 300 20)
 ```
+
+[functions in more depth at clojure.org](https://clojure.org/guides/learn/functions)
 
 #### return is implicit
 
 All functions return the last value in the brackets automatically - there's no need to explicitly return anything.
+
+## Additional tutorials:
+
+- [Clojure Bridge](http://clojurebridge.github.io/curriculum/#/)
+- [Clojure from the ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
