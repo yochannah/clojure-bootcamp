@@ -1,8 +1,17 @@
+[PREVIOUS: requirements](../requirements.md)
+[NEXT: re-frame and reagent](re-frame-and-reagent.md)
+
 # Self-study
+
+This guide is designed to give you some of the basics you'll need to know for [BlueGenes](https://github.com/intermine/bluegenes), and *doesn't* aim to act as a full Clojure / ClojureScript primer.
 
 ## Basic you'll need to know
 
-Make sure the [prerequisites](../requirements.md) are installed first, and you should be able to test everything out in a terminal by typing `lein repl` into the terminal to activate an interactive console that will print out results to any functions you've shared.
+Make sure the [prerequisites](../requirements.md) are installed first, and you should be able to test every code block below out.
+
+In a terminal, type `lein repl` to activate an interactive console that will print out results to any functions you've shared. If you need to leave the repl, type `exit`.
+
+Ok, let's get started:
 
 ### Invoking a function
 
@@ -71,17 +80,17 @@ Challenge: Try using functions like first, last, or nth to get a specific breed 
 
 ### You won't write HTML, you'll write hiccup.
 
-It's basically the same, but the syntax has been clojurised. Example:
+[Hiccup](https://github.com/weavejester/hiccup) and HTML are basically the same, but the syntax has been Clojurised. Example:
 
 This HTML:
 ```html
 <div class="kittens">
 <img src="fluffy.jpg" alt="picture of my cat fluffy" id="catpic">
-<p>This is my cat, Fluffy. </p>
+<p>This is my cat, Fluffy.</p>
 </div>
 ```
 
-would be written like this in hiccup:
+Would be written like this in hiccup:
 ```clojure
 [:div.kittens ;;or [:div {:class "kittens"}
   [:img#catpic {:src "fluffy.jpg" :alt "picture of my cat fluffy"}]
@@ -221,9 +230,17 @@ user=> (-> "a b c d"
 Some further notes about this example:
 
 - `user=>` emulates the output in a repl and is not part of the code.
-- Until now all the functions discussed have been pure Clojure(script). Functions that start with a dot indicate that they're actually javascript functions being executed in Clojure.
+- Until now all the functions discussed have been pure Clojure(script). Functions that start with a dot indicate that they're actually javascript functions being executed in Clojure. While for most part, Clojure and Clojurescript are absolutely identical, occasionally you may need to interface specifically with the Java or JavaScript functions - especially when it comes to DOM manipulation. Here's a great guide to [Javascript Interoperability](https://www.spacjer.com/blog/2014/09/12/clojurescript-javascript-interop/)
 
 ## Additional tutorials:
+
+These will cover Clojure more generally and may touch on things we haven't really looked at or don't use much in BlueGenes:
+
 - Expand your knowledge and practice what you know with [ClojureScript Koans](http://clojurescriptkoans.com/) - they'll introduce additional data types and concepts like lists, sets, and advanced functions, so keep your cheat sheet handy.
 - [Clojure Bridge](http://clojurebridge.github.io/curriculum/#/)
 - [Clojure from the ground up](https://aphyr.com/posts/301-clojure-from-the-ground-up-welcome)
+
+
+ 
+[PREVIOUS: requirements](../requirements.md)
+[NEXT: re-frame and reagent](re-frame-and-reagent.md)
