@@ -56,7 +56,14 @@ Re-frame also has a concept of **effects** - that is, things that will happen in
 
 ## Confused yet?
 
-Start by reviewing [the re-frame code walkthrough](https://github.com/Day8/re-frame/blob/master/docs/CodeWalkthrough.md)
+Try cloning https://github.com/yochannah/bootcamp-demo or just browse the files. The readme has instructions for running the project - give it a try.
+
+When you're browsing the code, the most interesting bits are probably in [/src/cljs/bootcamp_demo/](https://github.com/yochannah/bootcamp-demo/tree/master/src/cljs/bootcamp_demo) - looks at the view, events, and subs files to see how the lifecycle works, and then trying running the project.
+
+- See that little re-frisk arrow at the bottom of the page? That's a developer extension that allows you to browse app-db. Try updating the number field and see how app-db changes.
+- Try tweaking the files or functions to do different things. Figwheel will auto-reload every time you save a file, and will tell you in the browser if the code didn't compile.
+
+Consider reviewing [the re-frame code walkthrough](https://github.com/Day8/re-frame/blob/master/docs/CodeWalkthrough.md) for a more in depth explanation of re-frame's lifecycle.
 
 
 
