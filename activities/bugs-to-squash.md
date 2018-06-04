@@ -1,0 +1,2 @@
+- https://github.com/intermine/im-tables-3/issues/24
+- https://github.com/intermine/bluegenes/issues?q=is%3Aissue+is%3Aopen+label%3ABootcamp
