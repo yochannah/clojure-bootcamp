@@ -1,5 +1,5 @@
 - [PREVIOUS: requirements](intro-to-clojure.md)
-- [NEXT: TBD](re-frame-and-reagent.md)
+- [NEXT: Dip your toes in BlueGenes](bluegenes-time.md)
 
 # Some boring architecture stuff
 
@@ -84,4 +84,4 @@ These will cover re-frame, reagent, and react more generally and may touch on th
 - [React Lifecycle](http://busypeoples.github.io/post/react-component-lifecycle/) - think twice or thrice if feel you need to access the react lifecycle in re-frame. You usually don't.
 
 - [PREVIOUS: requirements](intro-to-clojure.md)
-- [NEXT: TBD](re-frame-and-reagent.md)
+- [NEXT: Dip your toes in BlueGenes](bluegenes-time.md)
