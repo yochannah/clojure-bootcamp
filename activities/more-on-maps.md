@@ -1,4 +1,4 @@
-[back to intro to clojure](intro-to-clojure.md)
+- [BACK: intro to clojure](intro-to-clojure.md)
 
 
 A long list of examples - try them in your repl. 
@@ -64,4 +64,4 @@ A long list of examples - try them in your repl.
 - Most json results from InterMine come back as a vector of maps. Try mapping over a vector like this and producing the same results. ```[{:gene-name "pparg" :organism "human"} {:gene-name "adh" :organism "fly"} {:gene-name "bmp4" :organism "mouse"}]```
 
 
-[back to intro to clojure](intro-to-clojure.md)
+- [BACK: intro to clojure](intro-to-clojure.md)
