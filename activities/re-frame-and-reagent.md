@@ -63,6 +63,13 @@ When you're browsing the code, the most interesting bits are probably in [/src/c
 - See that little re-frisk arrow at the bottom of the page? That's a developer extension that allows you to browse app-db. Try updating the number field and see how app-db changes.
 - Try tweaking the files or functions to do different things. Figwheel will auto-reload every time you save a file, and will tell you in the browser if the code didn't compile.
 
+**Things you could try**
+
+- Hiccup practice: can you embed an image on the page?
+- Can you display a better error message when the user types a non-number into the text input?
+- Try adding another text input field and make it a multiplier field (e.g. type one number in each field and rather than doubling, do field1*field2, then display the output).
+- Try adding a button that increments a counter every time you click it, and display the results on the page. you'll want the `on-click` event handler rather than the `on-change` that you see [here](https://github.com/yochannah/bootcamp-demo/blob/master/src/cljs/bootcamp_demo/views.cljs#L39)
+
 Consider reviewing [the re-frame code walkthrough](https://github.com/Day8/re-frame/blob/master/docs/CodeWalkthrough.md) for a more in depth explanation of re-frame's lifecycle.
 
 
