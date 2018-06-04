@@ -6,4 +6,4 @@
 
 That's it! Atom is less strict and offers less support for code completion than Intellij.
 
-- [NEXT: intro to Clojure](activities/intro-to-clojure)
+- [NEXT: intro to Clojure](activities/intro-to-clojure.md)
