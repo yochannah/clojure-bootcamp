@@ -1,4 +1,4 @@
-- [PREVIOUS: requirements](intro-to-clojure.md)
+- [PREVIOUS: Intro to clojure](intro-to-clojure.md)
 - [NEXT: Dip your toes in BlueGenes](bluegenes-time.md)
 
 # Some boring architecture stuff
@@ -83,5 +83,5 @@ These will cover re-frame, reagent, and react more generally and may touch on th
 - [React](https://reactjs.org/) You probably won't learn much useful here as Reagent is too far abstracted inlanguage and behavior, but React *is* the underpinning of BlueGenes.  
 - [React Lifecycle](http://busypeoples.github.io/post/react-component-lifecycle/) - think twice or thrice if feel you need to access the react lifecycle in re-frame. You usually don't.
 
-- [PREVIOUS: requirements](intro-to-clojure.md)
+- [PREVIOUS: Intro to clojure](intro-to-clojure.md)
 - [NEXT: Dip your toes in BlueGenes](bluegenes-time.md)
