@@ -1,4 +1,7 @@
-A long list of examples - try them in your repl
+[back to intro to clojure](intro-to-clojure.md)
+
+
+A long list of examples - try them in your repl. 
 
 
 ```clojure
@@ -54,3 +57,11 @@ A long list of examples - try them in your repl
        [:th "Gene"] [:th "Organism"]]]
      tbody]))
 ```
+
+### More things you could try
+
+- Try mapping over a simple vector - `["cats" "dogs" "ducklings"]` - it's similar to mapping over maps. 
+- Most json results from InterMine come back as a vector of maps. Try mapping over a vector like this and producing the same results. ```[{:gene-name "pparg" :organism "human"} {:gene-name "adh" :organism "fly"} {:gene-name "bmp4" :organism "mouse"}]```
+
+
+[back to intro to clojure](intro-to-clojure.md)
