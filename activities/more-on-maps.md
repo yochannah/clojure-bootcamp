@@ -1,18 +1,24 @@
 - [BACK: intro to clojure](intro-to-clojure.md)
 
 
-A long list of examples - try them in your repl. 
+A long list of examples - try them in your repl.
 
+Once you've defined a function, don't forget to execute it - e.g. run
+`(example-map-1)` to execute the first function
 
 ```clojure
-;;let's define something to iterate over with map
+;;let's define something to iterate over
 (def my-favourite-genes {:pparg "human"
                          :adh "fly"
+                         :fkh "fly"
+                         :gata1 "rat"
+                         :zen "fly"
                          :bmp4 "mouse"})
 (defn example-map-1 []
  (map
   ;;the function to execute for each item you iterate, or "map" over.
-  ;;note that for maps, it's returning a vector of [key value]
+  ;;note that when we map over maps, it's returning a vector of [key value]
+  ;; I'm sorry that map means two things in clojure. It's madness. Or mapness?
   (fn [a-val]
     (println a-val))
       ;;the collection to iterate over.
@@ -60,8 +66,9 @@ A long list of examples - try them in your repl.
 
 ### More things you could try
 
-- Try mapping over a simple vector - `["cats" "dogs" "ducklings"]` - it's similar to mapping over maps. 
+- Try mapping over a simple vector - `["cats" "dogs" "ducklings"]` - it's similar to mapping over maps.
 - Most json results from InterMine come back as a vector of maps. Try mapping over a vector like this and producing the same results. ```[{:gene-name "pparg" :organism "human"} {:gene-name "adh" :organism "fly"} {:gene-name "bmp4" :organism "mouse"}]```
 
 
 - [BACK: intro to clojure](intro-to-clojure.md)
+- [NEXT: mode on `reduce`](more-on-reduce.md)
