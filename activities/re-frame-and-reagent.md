@@ -7,9 +7,9 @@ BlueGenes is built on [re-frame](https://github.com/Day8/re-frame), which provid
 
 ## re-frame has an in-browser-memory database that knows everything.
 
-This is known as [App DB](https://github.com/Day8/re-frame/blob/master/docs/ApplicationState.md). It's basically just a giant map, like the maps we covered [last chapter](intro-to-clojure.md#map)).
+This is known as [App DB](https://github.com/Day8/re-frame/blob/master/docs/ApplicationState.md). It's basically just a giant map, like the maps we covered [last chapter](intro-to-clojure.md#map).
 
-What's neat about Re-frame, though, is that when you access properties from the app-db using **subscriptions**, your page will automatically be updated if app db changes. Reading the results of a description is also known as _dereferencing_ the subscription.
+What's neat about Re-frame, though, is that when you access properties from the app-db using **subscriptions**, your page will automatically be updated if app db changes. Reading the results of a subscription is also known as _dereferencing_ the subscription.
 
 When something happens, you can also dispatch **events** - e.g. if a user clicks on a button, you might dispatch a page navigation event.  
 
