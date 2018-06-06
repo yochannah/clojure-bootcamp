@@ -71,4 +71,4 @@ Once you've defined a function, don't forget to execute it - e.g. run
 
 
 - [BACK: intro to clojure](intro-to-clojure.md)
-- [NEXT: mode on `reduce`](more-on-reduce.md)
+- [NEXT: more on `reduce`](more-on-reduce.md)
