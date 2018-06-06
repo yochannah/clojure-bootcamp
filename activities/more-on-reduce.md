@@ -90,6 +90,18 @@ Reduce is a great way of transforming data from one shape to another.
 
 - Try mapping over a simple vector - `["cats" "dogs" "ducklings"]` - it's similar to mapping over maps.
 - Most json results from InterMine come back as a vector of maps. Try mapping over a vector like this and producing the same results. ```[{:gene-name "pparg" :organism "human"} {:gene-name "adh" :organism "fly"} {:gene-name "bmp4" :organism "mouse"}]```
+- remember that [table we made in the maps example](more-on-maps.md)? Try using the same methodology, but with a reduce, to create a `[:tbody]` and a set of rows and table cells.
+- extending a bit further - try doing the same, but with an unordered list rather than a table - e.g. 
+```html
+<ul>
+  <li>GENE NAME - ORGANISM NAME</li>
+</ul>
+```
+Which in Clojure would be... 
+```clojure
+[:ul
+  [:li GENE NAME - ORGANISM NAME]]
+```
 
 
 - [BACK: more-on-maps](more-on-maps.md)
