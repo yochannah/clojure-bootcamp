@@ -1,4 +1,4 @@
-Ok, maybe it's time to head over to [BlueGenes](https://github.com/intermine/bluegenes/tree/dev/src/cljs/bluegenes/sections/reportpage/components)
+Ok, maybe it's time to head over to [BlueGenes](https://github.com/intermine/bluegenes/)
 
 1. Try to follow the readme and get a BlueGenes up and running locally. 
     - can you change the port the bluegenes is running on?
