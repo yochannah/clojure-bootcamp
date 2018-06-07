@@ -22,7 +22,7 @@ Reduce is a great way of transforming data from one shape to another.
   ;; note the args here - the first arg, `new-vector`, is the data structure
   ;; that we passed in at second-to-final line of this function
   ;; just before my-favourite-genes.
-  ;; the second arg should be familiar - we're deconstructing again.
+  ;; the second arg should be familiar - we're destructuring again.
   (fn [new-vector [gene-name organism]]
     ;;we're adding gene-name to the new vector, and each time we iterate new-vec grows
     (conj new-vector gene-name))
@@ -88,8 +88,8 @@ Reduce is a great way of transforming data from one shape to another.
 
 ### More things you could try
 
-- Try `reduce`ing over a simple vector - `["cats" "dogs" "ducklings"]` - it's similar to mapping over maps.
-- Most json results from InterMine come back as a vector of maps. Try mapping over a vector like this and producing the same results. ```[{:gene-name "pparg" :organism "human"} {:gene-name "adh" :organism "fly"} {:gene-name "bmp4" :organism "mouse"}]```
+- Try `reduce`ing over a simple vector - `["cats" "dogs" "ducklings"]`.
+- Most json results from InterMine come back as a vector of maps. Try reducing over a vector like this and producing the same results. ```[{:gene-name "pparg" :organism "human"} {:gene-name "adh" :organism "fly"} {:gene-name "bmp4" :organism "mouse"}]```
 - remember that [table we made in the maps example](more-on-maps.md)? Try using the same methodology, but with a reduce, to create a `[:tbody]` and a set of rows and table cells.
 - extending a bit further - try doing the same, but with an unordered list rather than a table - e.g. 
 ```html
