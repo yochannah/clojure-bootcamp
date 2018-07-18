@@ -127,8 +127,8 @@ By now you've seen some identifiers that start with colons: `:`. This is a speci
 
 Map and reduce can take a while to wrap your head around. Here are some examples with exercises you can try. If they're making your brain squishy, it's ok to go and do the rest of this tutorial and come back later. 
 
-    - [Deeper dive into the map function](activities/more-on-maps.md)
-    - [Deeper dive into reduce](activities/more-on-reduce.md)
+ - [Deeper dive into the map function](activities/more-on-maps.md)
+ - [Deeper dive into reduce](activities/more-on-reduce.md)
 
 [Here's an example](https://github.com/intermine/bluegenes/blob/ca46fc89e9848474a5ea032932e40be66eccd590/src/cljs/bluegenes/developer.cljs#L70) of a map that outputs multiple table rows in BlueGenes.
 
