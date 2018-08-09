@@ -54,7 +54,7 @@ Re-frame also has a concept of **effects** - that is, things that will happen in
 }
 ```
 
-## Confused yet?
+## Confused yet? Here are some sample exercises to get you started
 
 Try cloning https://github.com/yochannah/bootcamp-demo or just browse the files. The readme has instructions for running the project - give it a try.
 
