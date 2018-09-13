@@ -162,7 +162,7 @@ If you want to define something constant that is global to the file you're worki
 (def important-url "http://www.intermine.org")
 ```
 
-You'd be able to access `important-url` anywhere in the file where it was `def`ed, or anywhere its file was imported. Example:
+You'd be able to access `important-url` anywhere in the same file after the line where it was `def`ed, or anywhere this file was imported. Example:
 
 ```clojure
 [:a {:href important-url} "Click here to visit the InterMine home page"]
