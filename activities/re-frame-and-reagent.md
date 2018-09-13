@@ -27,7 +27,7 @@ Re-frame also has a concept of **effects** - that is, things that will happen in
 }
 ```
 2. On the page, there's a button enticing the user to save a list. When the user clicks this button, an event is dispatched - let's say it's called `::query/save-to-list`. Several things happen in response to this event being triggered:
-    - the code for `::query/save-to-list` updates app-db, by setting the value of `:notification-bar-contents` to true. Thanks to a well-placed subscription, the notification is automatically displayed on the page. `::query/save-to-list` also dispatches an _effect_, as well.
+    - the code for `::query/save-to-list` updates app-db, by setting the value of `:notification-bar-contents` to "Saving...". Thanks to a well-placed subscription, the notification is automatically displayed on the page. `::query/save-to-list` also dispatches an _effect_, as well.
 
     Here's what app-db looks like right now:
 
